@@ -1,6 +1,6 @@
-<x-layout>
+<x-playout>
   <div>
-    Simplicity is an acquired taste. - Katharine Gerould 
+    <a href="{{ route('product.create') }}">Create</a>
   </div>
   <div>
     @foreach ($products as $product)
@@ -13,4 +13,4 @@
     <a href="{{ route('home') }}">Home</a><br>
     <a href="{{ route('info.index') }}">Info</a>
   </div>
-</x-layout>
+</x-playout>

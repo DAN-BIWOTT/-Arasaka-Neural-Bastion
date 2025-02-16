@@ -14,4 +14,25 @@ class ProductController extends Controller //It's good to have a parent class in
             'products'=> Product::all() //The first side is the name in the view.
         ]);
     }
+
+    public function create(){
+        return view('products.create');
+    }
+
+    // public function store(Request $request){
+    //     $product = new Product;
+
+    //     $product->name = $request->name;
+    //     $product->description = $request->description;
+    //     $product->size = $request->size;
+
+    //     $product->save();
+    //     return redirect()->route('product.index');
+    // }
+
+    public function store(Request $request){
+        Product::create($request -> input());
+
+        return redirect()->route('product.index');
+    }
 }
