@@ -92,8 +92,10 @@
         <p>This is an ongoing research project focused on developing and refining advanced trading strategies using machine learning. 
         </p>
             <p>
-                Specifically, we are exploring the use of Long Short-Term Memory (LSTM) networks to predict market trends and optimize trading decisions. Our research aims to combine robust data analysis with cutting-edge neural network architectures to improve the accuracy and efficiency of financial forecasting. Through rigorous testing and validation, we are constantly evolving the model to adapt to dynamic market conditions while ensuring consistent and reliable performance. This project is dedicated to pushing the boundaries of algorithmic trading and data-driven decision-making in financial markets.</p>        
-            </p>
+                This project focuses on leveraging an ensemble model that combines LinearSVR and a Shallow Feedforward Network (SFN) for predicting market trends and optimizing trading 
+                decisions. The strategy involves using a range of market data features, 
+                such as price differences, volume, and moving averages, to train the model. 
+                #feature engineering #grid search model tuning #evaluating performance through metrics like Mean Squared Error (MSE) and R². </p>
      </div>
      <div class="footer">
          <p>&copy; 2025 Arasaka Corporation. All rights reserved.</p>
