@@ -92,10 +92,8 @@
         <p>This is an ongoing research project focused on developing and refining advanced trading strategies using machine learning. 
         </p>
             <p>
-                This project focuses on leveraging an ensemble model that combines LinearSVR and a Shallow Feedforward Network (SFN) for predicting market trends and optimizing trading 
-                decisions. The strategy involves using a range of market data features, 
-                such as price differences, volume, and moving averages, to train the model. 
-                #feature engineering #grid search model tuning #evaluating performance through metrics like Mean Squared Error (MSE) and R². </p>
+                This project's all about running a hybrid—LinearSVR and SFN, working together to decode market trends and sharpen the trading game. We're feeding it raw data—price shifts, volume spikes, moving averages—and cranking up the system. #featureengineering #gridsearch #modeltuning #crunching MSE and R² to keep it sharp.
+            </p>
      </div>
      <div class="footer">
          <p>&copy; 2025 Arasaka Corporation. All rights reserved.</p>
