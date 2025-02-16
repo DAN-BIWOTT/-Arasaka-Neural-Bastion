@@ -9,7 +9,7 @@
     <div class="nav">
         <a href="#">Home</a>
         <a href="{{route('arasaka_trading_timeline.index')}}">Trading Timeline</a>
-        <a href="{{route('products.index')}}">Projects</a>
+        <a href="{{route('product.index')}}">Projects</a>
         <a href="{{route('info.index')}}">Info Page</a>
     </div>
     <div class="content">
