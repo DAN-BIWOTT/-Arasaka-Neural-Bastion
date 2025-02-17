@@ -16,7 +16,9 @@ return [
     |
     */
 
-    'default' => env('APP_ENV') === 'production' ? env('PRODUCTION_DB_CONNECTION', 'mysql') : env('DB_CONNECTION', 'mysql'),
+'default' => env('APP_ENV') === 'production' 
+    ? env('PRODUCTION_DB_CONNECTION', 'mysql') 
+    : env('DB_CONNECTION', 'mysql'),
 
 
     /*
