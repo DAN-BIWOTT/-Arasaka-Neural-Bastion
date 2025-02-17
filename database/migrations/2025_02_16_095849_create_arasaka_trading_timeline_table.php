@@ -42,8 +42,8 @@ return new class extends Migration
             $table->float('test_explained_variance')->nullable();
             
             // Scaling Parameters (Serialized JSON Format for Arrays)
-            $table->json('scaling_mean')->default("[0,1,2]");
-            $table->json('scaling_std_dev')->default("[0,1,2]");
+            $table->json('scaling_mean')->nullable();
+            $table->json('scaling_std_dev')->nullable();
             
             $table->timestamps();
         });
