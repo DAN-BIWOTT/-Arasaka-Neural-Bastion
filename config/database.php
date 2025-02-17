@@ -84,17 +84,16 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'laravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => env('PRODUCTION_DB_HOST', '127.0.0.1'),
+            'port' => env('PRODUCTION_DB_PORT', '5432'),
+            'database' => env('PRODUCTION_DB_DATABASE', 'neondb'),
+            'username' => env('PRODUCTION_DB_USERNAME', 'neondb_owner'),
+            'password' => env('PRODUCTION_DB_PASSWORD', 'npg_Q0WCTt1qlDyh'),
             'charset' => env('DB_CHARSET', 'utf8'),
             'prefix' => '',
             'prefix_indexes' => true,
             'search_path' => 'public',
-            'sslmode' => 'prefer',
+            'sslmode' => env('PRODUCTION_DB_SSLMODE', 'prefer'),
         ],
 
         'sqlsrv' => [
