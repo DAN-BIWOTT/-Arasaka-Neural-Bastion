@@ -93,7 +93,7 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
             'search_path' => 'public',
-            'sslmode' => env('PRODUCTION_DB_SSLMODE', 'prefer'),
+            'sslmode' => env('PRODUCTION_DB_SSLMODE', 'require'),
         ],
 
         'sqlsrv' => [
