@@ -55,10 +55,10 @@
 </head>
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/">Reports</a>
-        <a href="/">Analytics</a>
-        <a href="/">Settings</a>
+        <a href="{{route('arasaka_trading_timeline.index')}}">Home</a>
+        <a href="{{route('arasaka_trading_timeline.index')}}">Reports</a>
+        <a href="{{route('arasaka_trading_timeline.index')}}">Analytics</a>
+        <a href="{{route('arasaka_trading_timeline.index')}}">Settings</a>
     </nav>
     <h1>Cyberpunk Arasaka Report - February 2026</h1>
     <table>
