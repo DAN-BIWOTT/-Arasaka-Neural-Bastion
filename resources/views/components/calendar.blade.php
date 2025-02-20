@@ -83,8 +83,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>No Trade</td>
             <td></td>
+            <td>No Trade</td>
         </tr>
         <tr>
             <td>Week 2</td>
@@ -92,8 +92,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>No Trade</td>
             <td></td>
+            <td>No Trade</td>
         </tr>
         <tr>
             <td>Week 3</td>
@@ -101,8 +101,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>No Trade</td>
             <td></td>
+            <td>No Trade</td>
         </tr>
         <tr>
             <td>Week 4</td>
