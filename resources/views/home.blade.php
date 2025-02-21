@@ -9,16 +9,17 @@
     <div class="nav">
         <a href="#">Home</a>
         <a href="{{route('arasaka_trading_timeline.index')}}">Trading Timeline</a>
-        <a href="{{route('product.index')}}">Projects</a>
+        {{-- <a href="{{route('product.index')}}">Projects</a> --}}
         <a href="{{route('info.index')}}">Info Page</a>
     </div>
     <div class="content">
        <h2>Welcome to Arasaka Neural Bastion</h2>
-       <p>This is an ongoing research project focused on developing and refining advanced trading strategies using machine learning. 
        </p>
            <p>
-               This project's all about running a hybrid—LinearSVR and SFN, working together to decode market trends and sharpen the trading game. We're feeding it raw data—price shifts, volume spikes, moving averages—and cranking up the system. #featureengineering #gridsearch #modeltuning #crunching MSE and R² to keep it sharp.
-           </p>
+              Welcome to the neon grid. I work at the intersection of machine learning and trading, using advanced algorithms to uncover market patterns and turn raw data into actionable insights. In this hyper-connected world, information is currency, and precision is everything.
+                
+               Step into my world of algorithms and analysis as I navigate the digital frontier.
+            </p>
     </div>
     <div class="footer">
         <p>&copy; 2025 Arasaka Corporation. All rights reserved.</p>

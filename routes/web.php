@@ -24,8 +24,16 @@ Route::view('/','home')
     ->name('home'); //it takes two variables, the route and the view
 Route::get('/info',[InfoController::class, 'index'])
     ->name('info.index');
+
 Route::get('/timeline',[ArasakaTradingTimelineController:: class, 'index'])
-    ->name('arasaka_trading_timeline.index');
+    ->name('arasaka_trading_timeline.index'); //the long "name" is so that i know the folder and file im sending data to.
+Route::get('/timeline/analytics',[ArasakaTradingTimelineController:: class, 'analytics'])
+    ->name('arasaka_trading_timeline.analytics');
+Route::get('/timeline/analytics/create',[ArasakaTradingTimelineController:: class, 'create'])
+    ->name('arasaka_trading_timeline.create');
+Route::post('/timeline/analytics/store',[ArasakaTradingTimelineController:: class, 'store'])
+    ->name('arasaka_trading_timeline.store');
+
 Route::get('/products/create',[ProductController::class, 'create'])
     ->name('product.create');
 Route::post('/products/store', [ProductController::class, 'store'])

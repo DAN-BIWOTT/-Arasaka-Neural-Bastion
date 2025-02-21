@@ -56,11 +56,11 @@
 <body>
     <nav>
         <a href="{{route('home')}}">Home</a>
-        <a href="{{route('home')}}">Reports</a>
-        <a href="{{route('home')}}">Analytics</a>
-        <a href="{{route('home')}}">Settings</a>
+        {{-- <a href="{{route('home')}}">Reports</a> --}}
+        <a href="{{ route('arasaka_trading_timeline.analytics') }}">Analytics</a>
+        {{-- <a href="{{route('home')}}">Settings</a> --}}
     </nav>
-    <h1>Cyberpunk Arasaka Report - February 2026</h1>
+    <h1>Arasaka Trading Systems Report - February 2025</h1>
     <table>
         <tr>
             <th>Week</th>

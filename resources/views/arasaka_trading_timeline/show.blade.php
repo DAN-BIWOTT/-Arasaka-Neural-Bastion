@@ -1,7 +1,5 @@
 <x-layout>
-<div>
-    <x-calendar></x-calendar>
-    
+<div>    
     <style>
         body {
             background-color: #0a0a0a;
