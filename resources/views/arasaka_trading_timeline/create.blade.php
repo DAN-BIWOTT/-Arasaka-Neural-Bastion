@@ -1,8 +1,8 @@
 <div>
     <form action="{{Route('arasaka_trading_timeline.store')}}" method="POST" enctype="multipart/form-data">
-        @csrf  {{-- This is required! --}}
+        @csrf
         <label for="file_upload">
-            <input name="logs" type="file" accept=".json" value="{{old('logs')}}">
+            <input type="file" name="logs" id="logs" accept=".json" required>
         </label>
         <button>Upload JSON file</button>
     </form>
