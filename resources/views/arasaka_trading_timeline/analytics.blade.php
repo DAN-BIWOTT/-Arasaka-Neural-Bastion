@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arasaka Trading Model</title>
-    <link rel="stylesheet" href="{{ asset('css/arasaka_trading_timeline_analytics.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/arasaka_trading_timeline_analytics.css') }}">
     <script>
         function copyToClipboard(id) {
             let copyText = document.getElementById(id);
