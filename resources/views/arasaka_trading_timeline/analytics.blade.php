@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arasaka Trading Model</title>
     <link rel="stylesheet" href="{{ secure_asset('css/arasaka_trading_timeline_analytics.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/arasaka_trading_timeline_analytics.css') }}">
     <script>
         function copyToClipboard(id) {
             let copyText = document.getElementById(id);
@@ -16,17 +17,29 @@
 </head>
 <body>
     <div class="container">
+        <!-- NAVBAR -->
         <header class="navbar">
             <div class="logo">Arasaka Neural Bastion</div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li><a href="{{ route('arasaka_trading_timeline.index') }}">Timeline</a></li>
-                    {{-- <li><a href="{{ route('arasaka_trading_timeline.analytics') }}">Analytics</a></li> --}}
                     <li><a href="{{ route('arasaka_trading_timeline.create') }}">Create Model</a></li>
                 </ul>
             </nav>
         </header>
+        
+        <script>
+            function toggleMenu() {
+                document.querySelector('.nav-links').classList.toggle('active');
+            }
+            </script>
+
         <header>
             <h1>Arasaka Trading Model</h1>
         </header>
@@ -35,18 +48,24 @@
             <section class="model">
                 <p class="model-name">Model: {{ $model->model_name }}</p>
 
+                <!-- FEATURES -->
                 <section class="features">
                     <h2>Features</h2>
                     <div class="grid">
                         @php
                             $features = is_string($model->features) ? json_decode($model->features, true) : $model->features;
                         @endphp
-                        @foreach($features as $feature)
-                            <span>{{ $feature }}</span>
-                        @endforeach
+                        @if(!empty($features))
+                            @foreach($features as $feature)
+                                <span>{{ $feature }}</span>
+                            @endforeach
+                        @else
+                            <span>No features available</span>
+                        @endif
                     </div>
                 </section>
 
+                <!-- PERFORMANCE METRICS -->
                 <section class="metrics">
                     <h2>Performance Metrics</h2>
                     <div class="metric-grid">
@@ -58,11 +77,15 @@
                             'train_explained_variance' => $model->train_explained_variance,
                             'test_explained_variance' => $model->test_explained_variance
                         ] as $key => $value)
-                            <div>{{ ucwords(str_replace('_', ' ', $key)) }}: <span>{{ $value }}</span></div>
+                            <div>
+                                {{ ucwords(str_replace('_', ' ', $key)) }}: 
+                                <span>{{ $value ?? 'N/A' }}</span>
+                            </div>
                         @endforeach
                     </div>
                 </section>
 
+                <!-- SCALING PARAMETERS -->
                 <section class="scaling">
                     <h2>Scaling Parameters</h2>
                     <div class="scaling-grid">
@@ -87,11 +110,10 @@
             </section>
         @endforeach
 
-        <!-- Pagination Links -->
-        <div class="pagination">
-            {{ $models->links() }}
+        <!-- PAGINATION -->
+        <div class="pagination-container">
+            {{ $models->links('vendor.pagination.tailwind') }}
         </div>
     </div>
-
 </body>
 </html>

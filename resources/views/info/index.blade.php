@@ -5,24 +5,26 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
+        /* General Styles */
         body {
             background-color: #0d0d0d;
             color: #00ff99;
             font-family: 'Orbitron', sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            text-align: center;
         }
 
         .container {
-            text-align: center;
             max-width: 700px;
+            width: 90%;
             background: rgba(10, 10, 10, 0.9);
-            padding: 30px;
+            padding: 25px;
             border-radius: 10px;
             border: 2px solid #ff0099;
             box-shadow: 0 0 15px #ff0099, 0 0 30px #00ffff;
@@ -38,10 +40,11 @@
             color: #ff0099;
             font-size: 2em;
             text-shadow: 0 0 10px #ff0099;
+            margin-bottom: 10px;
         }
 
         .description {
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: #00ffff;
             margin-bottom: 20px;
             line-height: 1.6;
@@ -49,23 +52,28 @@
         }
 
         .hashtags {
-            font-size: 1.1em;
+            font-size: 1em;
             font-weight: bold;
             color: #00ff99;
             text-shadow: 0 0 5px #00ff99;
+            margin-bottom: 20px;
         }
 
+        /* NAVIGATION BUTTONS */
         .nav-links {
-            margin-top: 20px;
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
         }
 
         .nav-links a {
             display: inline-block;
-            margin: 10px;
-            padding: 12px 18px;
+            padding: 12px 16px;
             border-radius: 5px;
             text-decoration: none;
-            font-size: 1.1em;
+            font-size: 1em;
             font-weight: bold;
             color: #000;
             background: linear-gradient(45deg, #ff0099, #00ffff);
@@ -75,9 +83,25 @@
 
         .nav-links a:hover {
             box-shadow: 0 0 15px #00ffff;
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .description {
+                font-size: 1em;
+                padding: 0 10px;
+            }
+
+            .nav-links a {
+                padding: 10px 14px;
+                font-size: 0.9em;
+            }
+        }
     </style>
 
     <body>

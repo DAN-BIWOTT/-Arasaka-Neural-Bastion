@@ -1,5 +1,6 @@
 <x-layout>
-<div>    
+<div>
+    
     <style>
         body {
             background-color: #0a0a0a;
