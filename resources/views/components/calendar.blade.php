@@ -258,12 +258,12 @@
             </tr>
             <tr>
                 <td>Week 4</td>
+                <td class="highlight">170.46</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>Trade</td>
             </tr>
         </table>
     </div>
