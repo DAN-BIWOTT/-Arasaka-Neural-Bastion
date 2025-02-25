@@ -259,7 +259,7 @@
             <tr>
                 <td>Week 4</td>
                 <td class="highlight">170.46</td>
-                <td></td>
+                <td>133.21</td>
                 <td></td>
                 <td></td>
                 <td></td>
